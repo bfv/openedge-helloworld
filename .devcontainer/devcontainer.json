@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "OpenEdgeHelloWorld",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"abl.configuration.runtimes.default": "12.8",
+				"abl.configuration.runtimes": [
+					{ "name": "12.8", "path": "/usr/dlc" }
+				],
+				"abl.langServerJavaExecutable": "/opt/java/openjdk/bin/java"
+			},
+			"extensions": [
+				"riversidesoftware.openedge-abl-lsp@prerelease"
+			]
+		}
+	},
+
+	"containerEnv": {
+		"PROPATH": "./src,./bin"
+	},
+	
+	"forwardPorts": [ 3099 ],
+
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"initializeCommand": "echo Initialize....",
+	"postCreateCommand": "proDebugEnable -enable-all",
+	"shutdownAction": "none"
+}

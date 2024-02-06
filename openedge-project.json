@@ -1,0 +1,14 @@
+{
+    "name": "OpenEdgeHelloWorld",
+    "version": "1.0",
+    "oeversion": "12.8",
+    "graphicalMode": false,
+    "charset": "utf-8",
+    "extraParameters": "",
+    "buildPath": [
+        { "type": "source", "path": "./src" }
+    ],
+    "dbConnections": [ ],
+    "buildDirectory": "./bin",
+    "numThreads": 8
+}
