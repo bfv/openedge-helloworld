@@ -1,7 +1,7 @@
 # Openedge Helloworld
 
 ## prerequisites 
-Een laptop waar op draait/geïnstalleerd is:
+Een laptop waar op draait/geïnstalleerd is (op het Native OS, niet op een VM):
 - Docker
 - git (bij voorkeur met de Unix commando's)
 - de mogelijkheid om Flusso Gitlab repo te download (maak een access token aan)
