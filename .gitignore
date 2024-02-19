@@ -1,4 +1,11 @@
 .builder/
+.settings/
 bin/
+workspace/
 
+*.r
+
+.project
+.propath
+build.config
 progress.cfg
