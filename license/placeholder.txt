@@ -1,1 +1,1 @@
-directory voor progress.cfg license file
+put you 12.8 4GL development system (Linux) progress.cfg file here
