@@ -1,7 +1,7 @@
 # Openedge Helloworld
 
 ## prerequisites 
-A machine with Docker (Desktop) installed, on the native OS.
+A machine with Docker (Desktop) installed, on the native OS (so, Windows, Linux, MacOS).
 - git
 - VSCode (w/ Remote Development extension from Microsoft installed)
 
